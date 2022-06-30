@@ -1,9 +1,9 @@
-{% extends "base.html" %}
+{{% extends "base.html" %}}
 
-{% block content %}
+{{% block content %}}
 
-{% if request.user.is_authenticated %}
-{% load static %}
+{{% if request.user.is_authenticated %}}
+{{% load static %}}
 
 
   <!--Main layout--> <!--  --> 
@@ -69,7 +69,7 @@
   
   <!--Main layout-->
 
-{% else %}
+{{% else %}}
 <main style="margin-top: 58px">
   <div class="container pt-4">
     <!-- Section: Main chart -->
@@ -80,7 +80,7 @@
           <h5 class="mb-0 text-center"><strong>User Login</strong></h5>
         </div>
         <div class="col text-center">
-          <a class="nav-link waves-effect" href="{% url 'account_login' %}">
+          <a class="nav-link waves-effect" href="{{% url 'account_login' %}}">
             <span class="btn btn-primary mb-4 ripple-surface"> Login </span>
           </a>
         </div>
@@ -88,10 +88,10 @@
     </section>
   </div>  
 </main>
-{% endif %}
+{{% endif %}}
 </div>
 </main>
 
 
 
-{% endblock content %}
+{{% endblock content %}}
