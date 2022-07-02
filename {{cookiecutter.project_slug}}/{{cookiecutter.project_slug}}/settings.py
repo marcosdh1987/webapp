@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     
     #dash module
     'dash',
+    #login module
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
