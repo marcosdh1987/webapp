@@ -11,8 +11,8 @@ Includes:
 
 ## Prerequisites
 
-Python 3.6
-Cookiecutter
+- Python 3.6
+- Cookiecutter
 
 ## Create your copy of the project via cookiecutter
 
@@ -25,6 +25,7 @@ clone the template
 $ cookiecutter https://github.com/marcosdh1987/webapp.git
 ```
 
+# Local Usage
 ## Create virtual environment
 
 ### for windows:
@@ -65,8 +66,22 @@ $ python manage.py createsuperuser
 python manage.py runserver
 ```
 
-![Login](1.png)
-![Dashboard](2.png)
+# Using docker
+
+## Prerequisites
+
+- Docker
+
+```
+$ docker build -t imagename .
+$ docker run -d -p 8000:8000 imagename
+```
+
+
+# Deployment result
+
+![Login](static/img/1.png)
+![Dashboard](static/img/2.png)
 
 
 
