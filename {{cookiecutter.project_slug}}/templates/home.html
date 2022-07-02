@@ -1,14 +1,94 @@
-<!-- {{"{%"}} load static {{"%}"}} -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HOMEPAGE</title>
-</head>
-<body>
-  <h1>Welcome to the webapp</h1>
-  <!-- <p>{{ "{%" }} request.user.is_authenticated {{ "%}" }}</p> -->
-</body>
-</html>
+{{"{%"}} extends "base.html" {{"%}"}}
+
+{{"{%"}} block content {{"%}"}}
+
+{{"{%"}} if request.user.is_authenticated {{"%}"}}
+{{"{%"}} load static {{"%}"}}
+
+
+  <!--Main layout--> <!--  --> 
+<main style="margin-top: 58px">
+    <div class="container pt-4" style="background-image: url('/static/img/ml01.png');">
+      
+        <li class="nav">
+          <a class="btn btn-primary mb-4 ripple-surface" href="/dashboard">Main Dashboard - Overall Data analysis</a>
+        </li>
+        
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+        <li class="nav-link"></li>
+    </div>
+  
+  <!--Main layout-->
+
+{{"{%"}} else {{"%}"}}
+<main style="margin-top: 58px">
+  <div class="container pt-4">
+    <!-- Section: Main chart -->
+    <section class="mb-4">
+      
+      <div class="card">
+        <div class="card-header py-3">
+          <h5 class="mb-0 text-center"><strong>User Login</strong></h5>
+        </div>
+        <div class="col text-center">
+          <a class="nav-link waves-effect" href="{{"{%"}} url 'account_login' {{"%}"}}">
+            <span class="btn btn-primary mb-4 ripple-surface"> Login </span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>  
+</main>
+{{"{%"}} endif {{"%}"}}
+</div>
+</main>
+
+
+
+{{"{%"}} endblock content {{"%}"}}
