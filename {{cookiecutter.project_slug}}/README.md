@@ -25,6 +25,18 @@ clone the template
 $ cookiecutter https://github.com/marcosdh1987/webapp.git
 ```
 
+## Create and sync with your new repository
+
+```
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/gituser/yourepository.git
+git push -u origin main
+```
+
+
 # Local Usage
 ## Create virtual environment
 
